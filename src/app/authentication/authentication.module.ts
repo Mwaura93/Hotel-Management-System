@@ -9,6 +9,13 @@ import { Page500Component } from './page500/page500.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignOutComponent } from './sign-out/sign-out.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatError } from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatIcon } from '@angular/material/icon';
+
+
 
 @NgModule({
   declarations: [
@@ -21,7 +28,15 @@ import { SignOutComponent } from './sign-out/sign-out.component';
   ],
   imports: [
     CommonModule,
-    AuthenticationRoutingModule
+    AuthenticationRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatError,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIcon
+    
   ]
 })
 export class AuthenticationModule { }
+
